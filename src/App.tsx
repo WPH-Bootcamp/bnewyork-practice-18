@@ -1,4 +1,4 @@
-import Counter from "./01-Counter";
+import Counter from "./01-state";
 import "./index.css";
 
 type LessonProps = {
