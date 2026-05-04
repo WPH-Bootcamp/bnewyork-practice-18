@@ -1,4 +1,5 @@
-import Counter from "./01-state";
+import Counter from "./01-use-state";
+import CounterReducer from "./02-use-reducer";
 import "./index.css";
 
 type LessonProps = {
@@ -31,8 +32,12 @@ function App() {
           user, dan otomatis update tampilan.
         </p>
 
-        <Lesson title="State" desc="state">
+        <Lesson title="Use State" desc="manage state">
           <Counter />
+        </Lesson>
+
+        <Lesson title="Belajar Use Reducer" desc="Use Reducer">
+          <CounterReducer />
         </Lesson>
       </div>
     </div>
