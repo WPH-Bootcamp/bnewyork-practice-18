@@ -1,5 +1,6 @@
 import Counter from "./01-use-state";
 import CounterReducer from "./02-use-reducer";
+import FormReducer from "./02b-form-reducer";
 import "./index.css";
 
 type LessonProps = {
@@ -38,6 +39,10 @@ function App() {
 
         <Lesson title="Belajar Use Reducer" desc="Use Reducer">
           <CounterReducer />
+        </Lesson>
+
+        <Lesson title="Form Reducer" desc="Form Reducer">
+          <FormReducer />
         </Lesson>
       </div>
     </div>
