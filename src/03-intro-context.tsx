@@ -30,7 +30,7 @@ function SidebarOld({ username }: { username: string }) {
 function LayoutOld({ username }: { username: string }) {
   return (
     <div className="p-2 bg-slate-900 rounded border border-red-700/50">
-      <p className="text-x text-red-400 mb-1">
+      <p className="text-xs text-red-400 mb-1">
         Layout (cuma lewat doang) - Prop Driling
       </p>
       <SidebarOld username={username} />

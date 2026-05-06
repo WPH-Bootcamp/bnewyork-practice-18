@@ -2,6 +2,7 @@ import Counter from "./01-use-state";
 import CounterReducer from "./02-use-reducer";
 import FormReducer from "./02b-form-reducer";
 import IntroContext from "./03-intro-context";
+import ThemeContextDemo from "./04-ThemeContext";
 import "./index.css";
 
 type LessonProps = {
@@ -45,11 +46,19 @@ function App() {
         <Lesson title="Form Reducer" desc="Form Reducer">
           <FormReducer />
         </Lesson>
+
         <Lesson
           title="Intro Context"
           desc="Global state management with context"
         >
           <IntroContext />
+        </Lesson>
+
+        <Lesson
+          title="Theme Context"
+          desc="Global state management with context"
+        >
+          <ThemeContextDemo />
         </Lesson>
       </div>
     </div>
