@@ -12,7 +12,7 @@ function UserBadgeOld({ username }: { username: string }) {
 function MenuOld({ username }: { username: string }) {
   return (
     <div className="p-2 bg-blue-900 rounded">
-      <p className="text-xs text-slate-400 mb-1">Menu (cuma lewat doang)</p>
+      <p className="text-xs text-slate-400 mb-1">Menu (hanya lewat saja)</p>
       <UserBadgeOld username={username} />
     </div>
   );
@@ -21,7 +21,7 @@ function MenuOld({ username }: { username: string }) {
 function SidebarOld({ username }: { username: string }) {
   return (
     <div className="p-2 rounded bg-pink-500">
-      <p className="text-xs text-slate-400 mb-1">Sidebar (props hanya lewat)</p>
+      <p className="text-xs text-slate-400 mb-1">Sidebar (props hanya dilewatkan)</p>
       <MenuOld username={username} />
     </div>
   );
@@ -31,7 +31,7 @@ function LayoutOld({ username }: { username: string }) {
   return (
     <div className="p-2 bg-slate-900 rounded border border-red-700/50">
       <p className="text-xs text-red-400 mb-1">
-        Layout (cuma lewat doang) - Prop Driling
+        Layout (hanya lewat saja) - Prop Driling
       </p>
       <SidebarOld username={username} />
     </div>
@@ -53,7 +53,7 @@ function UserBadgeNew() {
 function MenuNew() {
   return (
     <div className="p-2 bg-slate-700 rounded">
-      <p className="text-xs text-slate-400 mb-1">Menu (cuma lewat doang)</p>
+      <p className="text-xs text-slate-400 mb-1">Menu (hanya lewat saja)</p>
       <UserBadgeNew />
     </div>
   );
@@ -72,7 +72,7 @@ function LayoutNew() {
   return (
     <div className="p-2 bg-slate-900 rounded border border-emerald-700/50">
       <p className="text-xs text-green-400 mb-1">
-        Layout (cuma lewat doang) - Prop Driling
+        Layout (hanya lewat saja) - Prop Driling
       </p>
       <SidebarNew />
     </div>
@@ -84,7 +84,7 @@ export default function IntroContext() {
 
   return (
     <div className="spac-y-4">
-      {/* button ganti username */}
+      {/* tombol ganti username */}
       <div className="flex flex-wrap gap-2">
         <button
           className="px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded text-xs font-semibold text-white"
@@ -138,7 +138,7 @@ export default function IntroContext() {
       </div>
 
       <div className="p-3 bg-slate-900 border border-slate-700 rounded-md text-xs text-slate-300">
-        sumber data sama, cara kirim nya yang beda
+        sumber data sama, cara pengirimannya yang berbeda
       </div>
     </div>
   );

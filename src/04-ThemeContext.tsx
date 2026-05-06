@@ -62,7 +62,7 @@ function MiddleLayer({ children }: { children: React.ReactNode }) {
   return (
     <div className="p-3 bg-slate-800 border border-dashed border-slate-600 rounded-md">
       <p className="text-xs text-slate-400 mb-2">
-        ↑ MiddleLayer (ga punya prop theme, ga peduli theme)
+        ↑ MiddleLayer (tidak punya prop theme, tidak peduli theme)
       </p>
       {children}
     </div>

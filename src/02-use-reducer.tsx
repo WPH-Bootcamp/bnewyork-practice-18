@@ -1,13 +1,13 @@
 import { useReducer } from "react";
 
-//step 1, bikin type state
+//step 1, buat type state
 type CounterState = {
   count: number;
   history: number[];
   lastAction: string;
 };
 
-//step 2, bikin type action
+//step 2, buat type action
 
 type CounterAction =
   | { type: "INCREMENT" }
@@ -64,7 +64,7 @@ function counterReducer(
 const initialState: CounterState = {
   count: 0,
   history: [],
-  lastAction: "(belom ada)",
+  lastAction: "(belum ada)",
 };
 
 export default function CounterReducer() {
